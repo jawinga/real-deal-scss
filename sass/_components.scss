@@ -1,0 +1,87 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //left section of nav
+  &__icon {
+    width: 8rem;
+    justify-content: center;
+
+    img {
+    }
+  }
+
+  &__buttons {
+    &--list {
+      display: flex;
+      text-transform: uppercase;
+      list-style: none;
+
+      &__element {
+        font-weight: 750;
+        transition: 0.3s ease-in; /* Animatable properties */
+
+        &:hover,
+        &::after {
+          text-decoration: underline;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 10px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.container__main {
+  &--left {
+    display: flex;
+    justify-content: center;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 8rem;
+      max-width: 65%;
+      gap: 2rem;
+      &--h1 {
+      }
+      &--text {
+      }
+      &--button {
+      }
+
+      &--referrals {
+        display: flex;
+        gap: 3.5rem;
+        margin-top: 3rem;
+        &__element {
+          &__name {
+          }
+          &__number {
+          }
+        }
+      }
+    }
+  }
+
+  &--right {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(121, 9, 9, 1) 35%,
+      rgba(145, 12, 12, 1) 100%
+    );
+    &__image {
+      width: 100%;
+      height: 100%;
+      transform: translate(-5rem, 5rem);
+      border-radius: 1.5rem;
+    }
+  }
+}

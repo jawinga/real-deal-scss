@@ -1,0 +1,14 @@
+{
+  "name": "real-deal-scss",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:sass": "sass sass/main.scss css/style.css",
+    "watch:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
