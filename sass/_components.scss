@@ -79,9 +79,49 @@
     );
     &__image {
       width: 100%;
-      height: 100%;
+      height: 85%;
       transform: translate(-5rem, 5rem);
       border-radius: 1.5rem;
     }
   }
 }
+
+.container__sub {
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  &--heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+    &__subtitle {
+    }
+    &__title {
+    }
+    &__text {
+    }
+  }
+
+  &--cards {
+    display: flex;
+
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    &__element {
+      @include card-element;
+      flex-wrap: wrap;
+
+      &__title {
+      }
+      &__text {
+      }
+    }
+  }
+
+  // __element
+}
+
+// container__sub--heading__subtitle

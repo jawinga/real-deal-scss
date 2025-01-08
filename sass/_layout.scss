@@ -13,12 +13,18 @@
   display: flex;
   &--left {
     background-color: rgb(247, 247, 247);
-    height: 100vh;
+    height: 110vh;
     width: 60%;
   }
   &--right {
-    background-color: rebeccapurple;
-    height: 100vh;
+    background-color: rgb(247, 247, 247);
+    height: 110vh;
     width: 40%;
   }
+}
+
+.container__sub {
+  background-color: white;
+  width: 100vh;
+  height: 100vh;
 }
