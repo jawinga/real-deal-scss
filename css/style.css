@@ -129,14 +129,43 @@ body {
 .nav__buttons--list__element {
   font-weight: 750;
   transition: 0.3s ease-in; /* Animatable properties */
+  cursor: pointer;
+  position: relative;
 }
-.nav__buttons--list__element:hover, .nav__buttons--list__element::after {
+.nav__buttons--list__element:hover, .nav__buttons--list__element:focus-within {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .nav__buttons--list__element:not(:last-child) {
   margin-right: 2rem;
+}
+.nav__buttons--list__element:hover ul, .nav__buttons--list__element:focus ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.nav__buttons--list__element--drop {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 6px -1px rgba(155, 155, 155, 0.1), 0 2px 4px -1px rgba(155, 155, 155, 0.06);
+  position: absolute;
+  top: 2rem;
+  left: -2.3rem;
+  list-style: none;
+  line-height: 2rem;
+  width: 15rem;
+  padding: 1.5rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+}
+.nav__buttons--list__element--drop__element:hover, .nav__buttons--list__element--drop__element::after {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 
 .container__main--left {

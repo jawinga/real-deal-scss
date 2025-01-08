@@ -21,16 +21,53 @@
       &__element {
         font-weight: 750;
         transition: 0.3s ease-in; /* Animatable properties */
+        cursor: pointer;
+        position: relative;
 
         &:hover,
-        &::after {
+        &:focus-within {
           text-decoration: underline;
           text-decoration-thickness: 2px;
           text-underline-offset: 10px;
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
         }
 
         &:not(:last-child) {
           margin-right: 2rem;
+        }
+
+        &:hover ul,
+        &:focus ul {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+
+        &--drop {
+          background-color: $background-header;
+          box-shadow: 0 4px 6px -1px rgba($box-shadow-color, 0.1),
+            0 2px 4px -1px rgba($box-shadow-color, 0.06);
+          position: absolute;
+          top: 2rem;
+          left: -2.3rem;
+          list-style: none;
+          line-height: 2rem;
+          width: 15rem;
+          padding: 1.5rem 1.5rem;
+          opacity: 0;
+          visibility: hidden;
+          transition: opacity 200ms ease-in-out;
+
+          &__element {
+            &:hover,
+            &::after {
+              text-decoration: underline;
+              text-decoration-thickness: 2px;
+              text-underline-offset: 8px;
+            }
+          }
         }
       }
     }
