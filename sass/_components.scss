@@ -104,24 +104,25 @@
     &__text {
     }
   }
-
-  &--cards {
-    display: flex;
-
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    &__element {
-      @include card-element;
-      flex-wrap: wrap;
-
-      &__title {
-      }
-      &__text {
-      }
-    }
-  }
-
   // __element
 }
 
 // container__sub--heading__subtitle
+
+.container__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  gap: 2rem;
+
+  &__element {
+    @include card-element;
+    display: flex;
+    &__title {
+    }
+    &__text {
+    }
+  }
+}

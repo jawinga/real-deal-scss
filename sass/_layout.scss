@@ -24,7 +24,13 @@
 }
 
 .container__sub {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100vh;
-  height: 100vh;
+  height: 30vh;
+}
+
+.container__cards {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 30vh;
 }

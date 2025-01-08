@@ -7,5 +7,14 @@
   flex-wrap: wrap;
   line-height: 1.5rem;
   gap: 2rem;
-  height: 22rem;
+  height: 16rem;
+  width: 20rem;
+  box-shadow: 0 4px 6px -1px rgba($box-shadow-color, 0.1),
+    0 2px 4px -1px rgba($box-shadow-color, 0.06);
+  transition: 1s;
+
+  &:hover {
+    transform: translateY(-10px);
+    background-color: rgb(199, 199, 199);
+  }
 }
